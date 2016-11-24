@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4260509FE9CB6DED4B6C2ED /* Pods_EasingPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA02EFE227A7D78597B33B3E /* Pods_EasingPlay.framework */; };
+		F62860001DE672E400467155 /* HeroIdle1.png in Resources */ = {isa = PBXBuildFile; fileRef = F6285FFF1DE672E400467155 /* HeroIdle1.png */; };
 		F6E915801DE6695900CA2AEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E9157F1DE6695900CA2AEA /* AppDelegate.swift */; };
 		F6E915821DE6695900CA2AEA /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6E915811DE6695900CA2AEA /* GameScene.sks */; };
 		F6E915841DE6695900CA2AEA /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = F6E915831DE6695900CA2AEA /* Actions.sks */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4677EA29737A9623BC5F17ED /* Pods-EasingPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasingPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasingPlay/Pods-EasingPlay.release.xcconfig"; sourceTree = "<group>"; };
+		57FB2298843D64DB33E30E0F /* Pods-EasingPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasingPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasingPlay/Pods-EasingPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		EA02EFE227A7D78597B33B3E /* Pods_EasingPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasingPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6285FFF1DE672E400467155 /* HeroIdle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeroIdle1.png; sourceTree = "<group>"; };
 		F6E9157C1DE6695900CA2AEA /* EasingPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasingPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E9157F1DE6695900CA2AEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E915811DE6695900CA2AEA /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -35,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4260509FE9CB6DED4B6C2ED /* Pods_EasingPlay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CCC922DA35F4285881A959E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57FB2298843D64DB33E30E0F /* Pods-EasingPlay.debug.xcconfig */,
+				4677EA29737A9623BC5F17ED /* Pods-EasingPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66C2A6644DFDAA2742F9FDAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA02EFE227A7D78597B33B3E /* Pods_EasingPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6E915731DE6695900CA2AEA = {
 			isa = PBXGroup;
 			children = (
 				F6E9157E1DE6695900CA2AEA /* EasingPlay */,
 				F6E9157D1DE6695900CA2AEA /* Products */,
+				5CCC922DA35F4285881A959E /* Pods */,
+				66C2A6644DFDAA2742F9FDAC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +91,7 @@
 				F6E915831DE6695900CA2AEA /* Actions.sks */,
 				F6E915851DE6695900CA2AEA /* GameScene.swift */,
 				F6E915871DE6695900CA2AEA /* GameViewController.swift */,
+				F6285FFF1DE672E400467155 /* HeroIdle1.png */,
 				F6E915891DE6695900CA2AEA /* Main.storyboard */,
 				F6E9158C1DE6695900CA2AEA /* Assets.xcassets */,
 				F6E9158E1DE6695900CA2AEA /* LaunchScreen.storyboard */,
@@ -80,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F6E915941DE6695900CA2AEA /* Build configuration list for PBXNativeTarget "EasingPlay" */;
 			buildPhases = (
+				8DB18478ADA2948B38D7DE66 /* 📦 Check Pods Manifest.lock */,
 				F6E915781DE6695900CA2AEA /* Sources */,
 				F6E915791DE6695900CA2AEA /* Frameworks */,
 				F6E9157A1DE6695900CA2AEA /* Resources */,
+				664D1B9666057B90BEFB5639 /* 📦 Embed Pods Frameworks */,
+				E2DAA37D8FB64D7A68314159 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -106,6 +136,7 @@
 					F6E9157B1DE6695900CA2AEA = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 4563WH9VE2;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,12 +167,61 @@
 				F6E9158B1DE6695900CA2AEA /* Main.storyboard in Resources */,
 				F6E915821DE6695900CA2AEA /* GameScene.sks in Resources */,
 				F6E9158D1DE6695900CA2AEA /* Assets.xcassets in Resources */,
+				F62860001DE672E400467155 /* HeroIdle1.png in Resources */,
 				F6E915901DE6695900CA2AEA /* LaunchScreen.storyboard in Resources */,
 				F6E915841DE6695900CA2AEA /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		664D1B9666057B90BEFB5639 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasingPlay/Pods-EasingPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB18478ADA2948B38D7DE66 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E2DAA37D8FB64D7A68314159 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasingPlay/Pods-EasingPlay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6E915781DE6695900CA2AEA /* Sources */ = {
@@ -269,6 +349,7 @@
 		};
 		F6E915951DE6695900CA2AEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57FB2298843D64DB33E30E0F /* Pods-EasingPlay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4563WH9VE2;
@@ -283,6 +364,7 @@
 		};
 		F6E915961DE6695900CA2AEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4677EA29737A9623BC5F17ED /* Pods-EasingPlay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4563WH9VE2;
@@ -314,6 +396,7 @@
 				F6E915961DE6695900CA2AEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
