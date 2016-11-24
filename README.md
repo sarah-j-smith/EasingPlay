@@ -1,0 +1,2 @@
+# EasingPlay
+Trying out SpriteKitEasingSwift
